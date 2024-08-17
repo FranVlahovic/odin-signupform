@@ -23,39 +23,41 @@
             </header>
     
             <form action="" method="get" class="signup-form">
-                <h2>Let's do this!</h2>
-                <fieldset>
-                    <div class="form-column">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="James">
-                    </div>
-                    <div class="form-column">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Smith">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="form-column">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-                    </div>
-                    <div class="form-column">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="form-column">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-                    </div>
-                    <div class="form-column">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-                    </div>
-                </fieldset>
+                <section class="formgroup">
+                    <h2>Let's do this!</h2>
+                    <fieldset>
+                        <div class="form-column">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="form-column">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" >
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-column">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-column">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        </div>
+                    </fieldset>
+                </section>
                 <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p class="login">Already have an account? <a href="#">Log in</a></p>
             </form>
         </section>
     </section>

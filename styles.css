@@ -1,7 +1,10 @@
+/* Font Face */
 @font-face {
     font-family: Norse-Bold;
     src: url(fonts/Norse-Bold.otf);
 }
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -9,13 +12,18 @@ body {
     padding: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
+/* Container */
 .container {
-    width: auto;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 
+/* Sidebar */
 .sidebar {
     position: relative;
     width: 30%;
@@ -30,13 +38,12 @@ body {
 
 .sidebar .sidebar-logo {
     width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    top: 15rem;
+    top: 14rem;
 }
 
 .sidebar .logo {
@@ -45,7 +52,7 @@ body {
 
 .sidebar .overlay-text {
     font-size: 6em;
-    color:#fff;
+    color: #fff;
     font-family: Norse-Bold;
     display: flex;
     margin: 30px 0;
@@ -55,68 +62,130 @@ body {
     color: #fff;
     display: flex;
     position: absolute;
+    text-align: center;
     bottom: 1rem;
     margin: 0;
+    font-size: 0.9em;
     gap: 5px;
 }
 
-.photocredits a:link {
-    color: #fff;
-}
+/* Links in Photocredits */
+.photocredits a:link,
 .photocredits a:visited {
     color: #fff;
 }
+
+/* Main Content */
 .main {
     display: flex;
     width: 50%;
     background-color: #f4f4f4;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
+
+/* Description */
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
+    padding: 50px;
+    width: 80%;
     font-size: 1.5em;
     font-weight: bold;
+    gap: 20px;
 }
+
+.description p {
+    margin: 0;
+}
+
+/* Form Elements */
 fieldset {
     display: flex;
-    justify-content: flex-start;
     border: none;
-    margin: 0 50px;
     column-gap: 70px;
     padding: 0;
 }
 
-form {
+.formgroup {
     background-color: #fff;
-    height: 30vh;
+    padding: 30px 0 40px 50px;
+    width: 910px;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    justify-content: flex-start;
     gap: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.form-column {
-    display: flex;
-    flex-direction: column;
+
+.formgroup input {
+    width: 20em;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; 
+    box-shadow: none;
+    transition: border-color 0.3s, box-shadow 0.3s; 
 }
 
-h2 {
-    margin: 20px 0 0 50px;
+.formgroup input:focus,
+.formgroup input:required:valid,
+.formgroup input:required:invalid {
+    outline: none;
 }
 
+.formgroup input:focus {
+    border-color: rgb(2, 129, 138);
+    box-shadow: 0 0 5px rgb(2, 129, 138);
+}
+
+.formgroup input:required:valid {
+    border-color: rgb(1, 128, 85);
+    box-shadow: 0 0 2px rgb(1, 128, 85);
+}
+
+.formgroup input:required:invalid {
+    border-color: rgb(128, 9, 1);
+    box-shadow: 0 0 2px rgb(128, 9, 1);
+}
+
+/* Main Label */
 .main label {
     display: block;
     margin-bottom: 5px;
     font-size: 12px;
+    font-weight: 600;
 }
 
-.main input {
-    width: 20em;
-    padding: 8px 0 8px 8px;
-    border: 1px solid #ccc;
+/* Main Button */
+.main button {
+    padding: 15px 20px;
+    font-size: 1em;
+    background-color: rgb(2, 129, 138);
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    margin: 30px 50px;
+    width: 23%;
+    font-weight: bold;
+}
+
+.main button:hover {
+    opacity: 0.8;
+}
+
+/* Login */
+.login {
+    margin: 0 50px;
+    font-size: 1em;
+}
+
+/* Links in Login */
+.login a:link,
+.login a:visited {
+    color: rgb(2, 129, 138);
+    text-decoration: none;
+    font-weight: bold;
 }
