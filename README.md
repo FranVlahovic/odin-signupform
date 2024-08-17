@@ -1,4 +1,4 @@
-![Signup Form Preview](https://pasteboard.co/f7h3AVvWZxY3.png)
+(https://pasteboard.co/f7h3AVvWZxY3.png)
 
 # Odin Signup Form
 
